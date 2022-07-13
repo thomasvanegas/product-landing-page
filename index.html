@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Home | Licores Thomas Vanegas</title>
+  </head>
+  <body>
+    <header id="header">
+      <img
+        id="header-img"
+        src="https://res.cloudinary.com/thomas-acevedo-web-dev/image/upload/v1657670174/product-landing-page/home_wd1olo.svg"
+        alt="Icono de Home que redirige al inicio de la landing page"
+      />
+      <nav id="nav-bar">
+        <a href="#form" class="nav-link">Mayoristas</a>
+        <a href="#acerca-nosotros" class="nav-link">Acerca de Nosotros</a>
+        <a href="#productos" class="nav-link">Productos</a>
+        <!-- <a href="#contactanos" class="nav-link">Contáctanos</a> -->
+      </nav>
+    </header>
+
+    <form action="https://www.freecodecamp.com/email-submit" id="form">
+      <label for="email">
+        ¿Eres mayorista o necesitas grandes cantidades de licor?, Escribe tu
+        correo electrónico en el siguiente cuadro y te contactaremos para
+        ofrecerte nuestros beneficies por compras al por mayor.
+      </label>
+
+      <input
+        type="email"
+        name="email"
+        id="email"
+        placeholder="Escribe tu correo electrónico aquí... Ejm: nombre@gmail.com"
+        required
+      />
+
+      <input id="submit" type="submit" value="Enviar Correo Electrónico" />
+    </form>
+
+    <!-- VIDEO - SECCION "ACERCA DE NOSOTROS" -->
+    <section class="acerca-nosotros">
+      <h2 id="acerca-nosotros">Acerca de Nosotros</h2>
+      <p>
+        En el siguiente video encontrarás información breve sobre nuestro
+        negocio, el fundador y como hemos crecido en los últimos años. Gracias
+        por hacer parte de Licores Thomas Vanegas.
+      </p>
+      <video id="video" controls muted>
+        <source
+          src="https://cdn.pixabay.com/vimeo/183788693/Microscope%20-%205456.mp4?width=640&expiry=1657737171&hash=ac7cc079da144f522304e24ceac2192d660eb3e3"
+          type=""
+        />
+        ¡Ha ocurrido un error!, parece que tu navegador no es capaz de
+        visualizar el video, lo sentimos. Sin emabargo, puedes intentar
+        ingresando a nuestro website mediante otro navegador.
+      </video>
+    </section>
+
+    <section id="productos">
+      <h2 class="productos-title">Productos</h2>
+
+      <div class="productos-grid-container">
+        <div class="producto">
+          <h2>Ron Medellín 8 años - Botella 750 mL</h2>
+          <img
+            class="producto-img"
+            src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/186940/3.-ron.jpg?v=637813983609800000"
+            alt="Imagen de una botella de licor"
+          />
+          <p>66,000 COP</p>
+        </div>
+        <div class="producto">
+          <h2>Ron Viejo de Caldas 15 años - Botella 750 mL</h2>
+          <img
+            class="producto-img"
+            src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/195055-800-600?v=637814057490900000&width=800&height=600&aspect=true"
+            alt="Imagen de una botella de licor"
+          />
+          <p>100,000</p>
+        </div>
+        <div class="producto">
+          <h2>Vodka Smirnoff de Lulo - Botella 750 mL</h2>
+          <img
+            class="producto-img"
+            src="https://www.licoresmedellin.com/wp-content/uploads/2021/08/smirnoff-lulo-750ml-nuevp.jpg"
+            alt="Imagen de una botella de licor"
+          />
+          <p>45,000</p>
+        </div>
+        <div class="producto">
+          <h2>Whisky Johnnnie Walker Black Label - 700 mL</h2>
+          <img
+            class="producto-img"
+            src="https://colombiavinos.com/wp-content/uploads/2020/09/JOHNNIE-WALKER-BLACK-LABEL.jpg"
+            alt="Imagen de una botella de licor"
+          />
+          <p>130,000</p>
+        </div>
+        <div class="producto">
+          <h2>Whisky Johnnnie Walker Blue Label - Botella 700 mL</h2>
+          <img
+            class="producto-img"
+            src="https://i0.wp.com/www.licoresmedellin.com/wp-content/uploads/2021/08/Johnnie_Blu_Label.jpg?fit=600%2C800&ssl=1"
+            alt="Imagen de una botella de licor"
+          />
+          <p>870,000</p>
+        </div>
+        <div class="producto">
+          <h2>Whisky Buchanans Master 18 años - Botella 750 mL</h2>
+          <img
+            class="producto-img"
+            src="https://jumbocolombiaio.vtexassets.com/arquivos/ids/184170/50196913.jpg?v=637813972081600000"
+            alt="Imagen de una botella de licor"
+          />
+          <p>180,000</p>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

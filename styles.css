@@ -1,0 +1,192 @@
+/* IMPORTACIÓN DE FONT-PAIRING DESDE ELEMENTOR (idea) y GOOGLE FONTS (fuentes) -> 
+COMBINACIÓN:  Merriweather Sans Bold + Merriweather */
+@import url('https://fonts.googleapis.com/css2?family=Merriweather&family=Merriweather+Sans:wght@700&display=swap');
+
+
+/* PALETA DE COLORES EXTRAIDA DE https://coolors.co/palettes/trending
+
+1. #FFF
+2. #E5E5E5
+3. #FCA311
+4. #14213D
+5. #000
+
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+h1,
+h2,
+a,
+label,
+[type="submit"] {
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+p,
+[type="email"] {
+    font-family: 'Merriweather', serif;
+}
+
+body {
+    background-color: #E5E5E5;
+}
+
+/* HEADER -> IMG + BARRA DE NAVEGACIÓN */
+#header {
+    height: 10vh;
+    background-color: #FCA311;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: sticky;
+    top: 0;
+}
+
+#header-img {
+    margin-left: 6vw;
+    height: 50%;
+}
+
+#nav-bar {
+    height: 70%;
+    width: 60%;
+
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.nav-link {
+    display: flex;
+    align-items: center;
+
+    font-size: 3vh;
+    text-decoration: none;
+    color: #000;
+}
+
+.nav-link:hover {
+    color: #FFF;
+}
+
+/* FIN ESTILOS HEADER */
+
+/* FORM */
+
+#form {
+    height: 30vh;
+    margin-bottom: 10vh;
+
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#form label {
+    margin-top: 2vh;
+    width: 50vw;
+    text-align: center;
+    font-size: 3vh;
+}
+
+#email {
+    width: 40vw;
+    height: 5vh;
+
+    text-align: center;
+}
+
+#submit {
+    width: 20vw;
+    height: 5vh;
+    background-color: #FCA311;
+}
+
+#submit:hover {
+    cursor: pointer;
+    background-color: #000;
+    color: #FCA311;
+}
+
+/* FIN DEL FORM */
+
+/* ACERCA DE NOSOTROS -> H2, P Y VIDEO*/
+.acerca-nosotros {
+    height: 60vh;
+    margin: 10vh 0 10vh 0;
+    border-top: #FFF 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.acerca-nosotros p {
+    width: 50vw;
+    font-size: 3vh;
+    text-align: center;
+}
+
+.acerca-nosotros h2 {
+    font-size: 4vh;
+}
+
+#video {
+    width: 30vw;
+}
+
+/* FIN ACERCA DE NOSOTROS */
+
+
+/* PRODUCTOS */
+#productos {
+    height: 90vh;
+    border-top: #FFF 1px solid;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productos-title {
+    margin-top: 1vh;
+    font-size: 4vh;
+}
+
+.productos-grid-container {
+    height: 80vh;
+
+    display: grid;
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(2, 38vh);
+    gap: 2vh 5vw;
+}
+
+.producto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.producto h2 {
+    text-align: center;
+    font-size: 3vh;
+}
+
+.producto-img {
+    height: 24vh;
+    width: 12vw;
+}
+
+/* APLICANDO MEDIA QUERIES PARA MOBILE DEVICES */
+@media (max-width: 480px) {}
